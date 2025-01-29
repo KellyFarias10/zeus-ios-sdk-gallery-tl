@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BF3F2F50260A38A4E071ABE /* Pods_zeus_ios_sdk_gallery_tl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54062CFAE37FF1E989823D0 /* Pods_zeus_ios_sdk_gallery_tl.framework */; };
+		70A0AA5C2D48967A0067377D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AA5B2D48967A0067377D /* AppDelegate.swift */; };
+		70A0AA5E2D48967A0067377D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AA5D2D48967A0067377D /* SceneDelegate.swift */; };
+		70A0AA652D48967B0067377D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A0AA642D48967B0067377D /* Assets.xcassets */; };
+		70A0AA682D48967B0067377D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A0AA662D48967B0067377D /* LaunchScreen.storyboard */; };
+		70A0AA842D4896A90067377D /* ZeusGalleryTl.h in Headers */ = {isa = PBXBuildFile; fileRef = 70A0AA762D4896A90067377D /* ZeusGalleryTl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70A0AA872D4896A90067377D /* ZeusGalleryTl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A0AA742D4896A90067377D /* ZeusGalleryTl.framework */; };
+		70A0AA882D4896A90067377D /* ZeusGalleryTl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70A0AA742D4896A90067377D /* ZeusGalleryTl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70A0AA992D489CB20067377D /* GalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AA922D489CB20067377D /* GalleryPresenter.swift */; };
+		70A0AA9B2D489CB20067377D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AA942D489CB20067377D /* GalleryViewController.swift */; };
+		70A0AA9C2D489CB20067377D /* GalleryView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AA952D489CB20067377D /* GalleryView+Layout.swift */; };
+		70A0AA9D2D489CB20067377D /* GalleryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AA962D489CB20067377D /* GalleryProtocols.swift */; };
+		70A0AA9E2D489CB20067377D /* GalleryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AA972D489CB20067377D /* GalleryInteractor.swift */; };
+		70A0AA9F2D489CB20067377D /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AA982D489CB20067377D /* GalleryView.swift */; };
+		70A0AAA22D489E2C0067377D /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAA12D489E2C0067377D /* GalleryCollectionViewCell.swift */; };
+		70A0AAA42D489E4E0067377D /* PaginatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAA32D489E4E0067377D /* PaginatorView.swift */; };
+		70A0AAA72D493C5B0067377D /* env.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 70A0AAA62D493C5B0067377D /* env.xcconfig */; };
+		70A0AAAA2D494AA10067377D /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAA92D494AA10067377D /* BaseResponse.swift */; };
+		70A0AAC32D499B880067377D /* GalleryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAC22D499B880067377D /* GalleryRouter.swift */; };
+		70A0AAC62D49A0930067377D /* GalleryViewController+UICollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAC52D49A0930067377D /* GalleryViewController+UICollection.swift */; };
+		70A0AACF2D49B1310067377D /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAC82D49B1310067377D /* DetailsPresenter.swift */; };
+		70A0AAD02D49B1310067377D /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAC92D49B1310067377D /* DetailsRouter.swift */; };
+		70A0AAD12D49B1310067377D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AACA2D49B1310067377D /* DetailsViewController.swift */; };
+		70A0AAD22D49B1310067377D /* DetailsView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AACB2D49B1310067377D /* DetailsView+Layout.swift */; };
+		70A0AAD32D49B1310067377D /* DetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AACC2D49B1310067377D /* DetailsProtocols.swift */; };
+		70A0AAD42D49B1310067377D /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AACD2D49B1310067377D /* DetailsInteractor.swift */; };
+		70A0AAD52D49B1310067377D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AACE2D49B1310067377D /* DetailsView.swift */; };
+		70A0AAD72D49B1720067377D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAD62D49B1710067377D /* Photo.swift */; };
+		70A0AADA2D49B9430067377D /* CardPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAD92D49B9430067377D /* CardPhoto.swift */; };
+		70A0AADC2D49C5440067377D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AADB2D49C5440067377D /* User.swift */; };
+		70A0AADF2D49CD840067377D /* GalleryInterptorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AADE2D49CD840067377D /* GalleryInterptorItem.swift */; };
+		70A0AAE42D49CFD50067377D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAE32D49CFD50067377D /* UIColor+Extension.swift */; };
+		70A0AAE82D49D1DC0067377D /* InterceptorRuler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAE72D49D1DC0067377D /* InterceptorRuler.swift */; };
+		70A0AAEC2D49D3B30067377D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAEB2D49D3B30067377D /* MainViewController.swift */; };
+		70A0AAF62D49D3BB0067377D /* FormView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAEF2D49D3BB0067377D /* FormView+Layout.swift */; };
+		70A0AAF72D49D3BB0067377D /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAF02D49D3BB0067377D /* FormView.swift */; };
+		70A0AAF92D49D3BB0067377D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAF42D49D3BB0067377D /* MainView.swift */; };
+		70A0AAFA2D49D3BB0067377D /* MainView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0AAF52D49D3BB0067377D /* MainView+Layout.swift */; };
+		77B6696E13FD1082A0E32772 /* Pods_ZeusGalleryTl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBCDBA3654FCF8CF2E32263 /* Pods_ZeusGalleryTl.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70A0AA852D4896A90067377D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70A0AA502D48967A0067377D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70A0AA732D4896A90067377D;
+			remoteInfo = ZeusGalleryTl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		70A0AA8C2D4896A90067377D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				70A0AA882D4896A90067377D /* ZeusGalleryTl.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1390E1430BCBB46088ACC347 /* Pods-ZeusGalleryTl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeusGalleryTl.release.xcconfig"; path = "Target Support Files/Pods-ZeusGalleryTl/Pods-ZeusGalleryTl.release.xcconfig"; sourceTree = "<group>"; };
+		1764F8538F5EC09502F2B034 /* Pods-ZeusGalleryTl-ZeusGalleryTlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeusGalleryTl-ZeusGalleryTlTests.release.xcconfig"; path = "Target Support Files/Pods-ZeusGalleryTl-ZeusGalleryTlTests/Pods-ZeusGalleryTl-ZeusGalleryTlTests.release.xcconfig"; sourceTree = "<group>"; };
+		1FBCDBA3654FCF8CF2E32263 /* Pods_ZeusGalleryTl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeusGalleryTl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		373205715D79291CBB73FE9B /* Pods-ZeusGalleryTl-ZeusGalleryTlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeusGalleryTl-ZeusGalleryTlTests.debug.xcconfig"; path = "Target Support Files/Pods-ZeusGalleryTl-ZeusGalleryTlTests/Pods-ZeusGalleryTl-ZeusGalleryTlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EA16660DC6EDA84EDD59E08 /* Pods_ZeusGalleryTl_ZeusGalleryTlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeusGalleryTl_ZeusGalleryTlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		654640A80F6182552DEB856C /* Pods-zeus-ios-sdk-gallery-tl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zeus-ios-sdk-gallery-tl.debug.xcconfig"; path = "Target Support Files/Pods-zeus-ios-sdk-gallery-tl/Pods-zeus-ios-sdk-gallery-tl.debug.xcconfig"; sourceTree = "<group>"; };
+		6E28FADAF56212DE69B71B4A /* Pods-zeus-ios-sdk-gallery-tl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zeus-ios-sdk-gallery-tl.release.xcconfig"; path = "Target Support Files/Pods-zeus-ios-sdk-gallery-tl/Pods-zeus-ios-sdk-gallery-tl.release.xcconfig"; sourceTree = "<group>"; };
+		70A0AA582D48967A0067377D /* zeus-ios-sdk-gallery-tl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zeus-ios-sdk-gallery-tl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A0AA5B2D48967A0067377D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70A0AA5D2D48967A0067377D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70A0AA642D48967B0067377D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70A0AA672D48967B0067377D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70A0AA692D48967B0067377D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70A0AA742D4896A90067377D /* ZeusGalleryTl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZeusGalleryTl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A0AA762D4896A90067377D /* ZeusGalleryTl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZeusGalleryTl.h; sourceTree = "<group>"; };
+		70A0AA922D489CB20067377D /* GalleryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPresenter.swift; sourceTree = "<group>"; };
+		70A0AA942D489CB20067377D /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		70A0AA952D489CB20067377D /* GalleryView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryView+Layout.swift"; sourceTree = "<group>"; };
+		70A0AA962D489CB20067377D /* GalleryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryProtocols.swift; sourceTree = "<group>"; };
+		70A0AA972D489CB20067377D /* GalleryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryInteractor.swift; sourceTree = "<group>"; };
+		70A0AA982D489CB20067377D /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		70A0AAA12D489E2C0067377D /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		70A0AAA32D489E4E0067377D /* PaginatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatorView.swift; sourceTree = "<group>"; };
+		70A0AAA62D493C5B0067377D /* env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = env.xcconfig; sourceTree = "<group>"; };
+		70A0AAA92D494AA10067377D /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		70A0AAC22D499B880067377D /* GalleryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryRouter.swift; sourceTree = "<group>"; };
+		70A0AAC52D49A0930067377D /* GalleryViewController+UICollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+UICollection.swift"; sourceTree = "<group>"; };
+		70A0AAC82D49B1310067377D /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		70A0AAC92D49B1310067377D /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		70A0AACA2D49B1310067377D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		70A0AACB2D49B1310067377D /* DetailsView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsView+Layout.swift"; sourceTree = "<group>"; };
+		70A0AACC2D49B1310067377D /* DetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsProtocols.swift; sourceTree = "<group>"; };
+		70A0AACD2D49B1310067377D /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		70A0AACE2D49B1310067377D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		70A0AAD62D49B1710067377D /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		70A0AAD92D49B9430067377D /* CardPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPhoto.swift; sourceTree = "<group>"; };
+		70A0AADB2D49C5440067377D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		70A0AADE2D49CD840067377D /* GalleryInterptorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryInterptorItem.swift; sourceTree = "<group>"; };
+		70A0AAE32D49CFD50067377D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		70A0AAE72D49D1DC0067377D /* InterceptorRuler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterceptorRuler.swift; sourceTree = "<group>"; };
+		70A0AAEB2D49D3B30067377D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		70A0AAEF2D49D3BB0067377D /* FormView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FormView+Layout.swift"; sourceTree = "<group>"; };
+		70A0AAF02D49D3BB0067377D /* FormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		70A0AAF42D49D3BB0067377D /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		70A0AAF52D49D3BB0067377D /* MainView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainView+Layout.swift"; sourceTree = "<group>"; };
+		70D598C4220D07811F915D51 /* Pods-ZeusGalleryTl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeusGalleryTl.debug.xcconfig"; path = "Target Support Files/Pods-ZeusGalleryTl/Pods-ZeusGalleryTl.debug.xcconfig"; sourceTree = "<group>"; };
+		C54062CFAE37FF1E989823D0 /* Pods_zeus_ios_sdk_gallery_tl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zeus_ios_sdk_gallery_tl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70A0AA552D48967A0067377D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A0AA872D4896A90067377D /* ZeusGalleryTl.framework in Frameworks */,
+				0BF3F2F50260A38A4E071ABE /* Pods_zeus_ios_sdk_gallery_tl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A0AA712D4896A90067377D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B6696E13FD1082A0E32772 /* Pods_ZeusGalleryTl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0192F2AF562CBB4EA6AC41A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70D598C4220D07811F915D51 /* Pods-ZeusGalleryTl.debug.xcconfig */,
+				1390E1430BCBB46088ACC347 /* Pods-ZeusGalleryTl.release.xcconfig */,
+				373205715D79291CBB73FE9B /* Pods-ZeusGalleryTl-ZeusGalleryTlTests.debug.xcconfig */,
+				1764F8538F5EC09502F2B034 /* Pods-ZeusGalleryTl-ZeusGalleryTlTests.release.xcconfig */,
+				654640A80F6182552DEB856C /* Pods-zeus-ios-sdk-gallery-tl.debug.xcconfig */,
+				6E28FADAF56212DE69B71B4A /* Pods-zeus-ios-sdk-gallery-tl.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		70A0AA4F2D48967A0067377D = {
+			isa = PBXGroup;
+			children = (
+				70A0AA5A2D48967A0067377D /* zeus-ios-sdk-gallery-tl */,
+				70A0AA752D4896A90067377D /* ZeusGalleryTl */,
+				70A0AA592D48967A0067377D /* Products */,
+				0192F2AF562CBB4EA6AC41A4 /* Pods */,
+				AC409B862D1102CBC0F9ACA7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70A0AA592D48967A0067377D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AA582D48967A0067377D /* zeus-ios-sdk-gallery-tl.app */,
+				70A0AA742D4896A90067377D /* ZeusGalleryTl.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70A0AA5A2D48967A0067377D /* zeus-ios-sdk-gallery-tl */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAE62D49D1B60067377D /* Interceptor */,
+				70A0AAE52D49D1120067377D /* Main */,
+				70A0AAA52D493C250067377D /* Configuration */,
+				70A0AA5B2D48967A0067377D /* AppDelegate.swift */,
+				70A0AA5D2D48967A0067377D /* SceneDelegate.swift */,
+				70A0AA642D48967B0067377D /* Assets.xcassets */,
+				70A0AA662D48967B0067377D /* LaunchScreen.storyboard */,
+				70A0AA692D48967B0067377D /* Info.plist */,
+			);
+			path = "zeus-ios-sdk-gallery-tl";
+			sourceTree = "<group>";
+		};
+		70A0AA752D4896A90067377D /* ZeusGalleryTl */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAE22D49CFC20067377D /* Extensions */,
+				70A0AADD2D49CD680067377D /* Interceptor */,
+				70A0AAA82D494A760067377D /* Models */,
+				70A0AA902D489B580067377D /* Modules */,
+				70A0AA762D4896A90067377D /* ZeusGalleryTl.h */,
+			);
+			path = ZeusGalleryTl;
+			sourceTree = "<group>";
+		};
+		70A0AA902D489B580067377D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAD82D49B91F0067377D /* Components */,
+				70A0AAC72D49B0F90067377D /* Details */,
+				70A0AA912D489B600067377D /* Gallery */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		70A0AA912D489B600067377D /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAC42D49A06F0067377D /* View */,
+				70A0AAA02D489DF30067377D /* Components */,
+				70A0AA922D489CB20067377D /* GalleryPresenter.swift */,
+				70A0AAC22D499B880067377D /* GalleryRouter.swift */,
+				70A0AA962D489CB20067377D /* GalleryProtocols.swift */,
+				70A0AA972D489CB20067377D /* GalleryInteractor.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		70A0AAA02D489DF30067377D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAA12D489E2C0067377D /* GalleryCollectionViewCell.swift */,
+				70A0AAA32D489E4E0067377D /* PaginatorView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		70A0AAA52D493C250067377D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAA62D493C5B0067377D /* env.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		70A0AAA82D494A760067377D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAA92D494AA10067377D /* BaseResponse.swift */,
+				70A0AAD62D49B1710067377D /* Photo.swift */,
+				70A0AADB2D49C5440067377D /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70A0AAC42D49A06F0067377D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AA942D489CB20067377D /* GalleryViewController.swift */,
+				70A0AA982D489CB20067377D /* GalleryView.swift */,
+				70A0AA952D489CB20067377D /* GalleryView+Layout.swift */,
+				70A0AAC52D49A0930067377D /* GalleryViewController+UICollection.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70A0AAC72D49B0F90067377D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAC82D49B1310067377D /* DetailsPresenter.swift */,
+				70A0AAC92D49B1310067377D /* DetailsRouter.swift */,
+				70A0AACA2D49B1310067377D /* DetailsViewController.swift */,
+				70A0AACB2D49B1310067377D /* DetailsView+Layout.swift */,
+				70A0AACC2D49B1310067377D /* DetailsProtocols.swift */,
+				70A0AACD2D49B1310067377D /* DetailsInteractor.swift */,
+				70A0AACE2D49B1310067377D /* DetailsView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		70A0AAD82D49B91F0067377D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAD92D49B9430067377D /* CardPhoto.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		70A0AADD2D49CD680067377D /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AADE2D49CD840067377D /* GalleryInterptorItem.swift */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		70A0AAE22D49CFC20067377D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAE32D49CFD50067377D /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		70A0AAE52D49D1120067377D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAED2D49D3BB0067377D /* Components */,
+				70A0AAEB2D49D3B30067377D /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		70A0AAE62D49D1B60067377D /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAE72D49D1DC0067377D /* InterceptorRuler.swift */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		70A0AAED2D49D3BB0067377D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAEE2D49D3BB0067377D /* Form */,
+				70A0AAF32D49D3BB0067377D /* Main */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		70A0AAEE2D49D3BB0067377D /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAEF2D49D3BB0067377D /* FormView+Layout.swift */,
+				70A0AAF02D49D3BB0067377D /* FormView.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		70A0AAF32D49D3BB0067377D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				70A0AAF42D49D3BB0067377D /* MainView.swift */,
+				70A0AAF52D49D3BB0067377D /* MainView+Layout.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AC409B862D1102CBC0F9ACA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FBCDBA3654FCF8CF2E32263 /* Pods_ZeusGalleryTl.framework */,
+				4EA16660DC6EDA84EDD59E08 /* Pods_ZeusGalleryTl_ZeusGalleryTlTests.framework */,
+				C54062CFAE37FF1E989823D0 /* Pods_zeus_ios_sdk_gallery_tl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		70A0AA6F2D4896A90067377D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A0AA842D4896A90067377D /* ZeusGalleryTl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		70A0AA572D48967A0067377D /* zeus-ios-sdk-gallery-tl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70A0AA6C2D48967B0067377D /* Build configuration list for PBXNativeTarget "zeus-ios-sdk-gallery-tl" */;
+			buildPhases = (
+				F369A7AA846BEBCA269D3BAC /* [CP] Check Pods Manifest.lock */,
+				70A0AA542D48967A0067377D /* Sources */,
+				70A0AA552D48967A0067377D /* Frameworks */,
+				70A0AA562D48967A0067377D /* Resources */,
+				70A0AA8C2D4896A90067377D /* Embed Frameworks */,
+				49D15C741C101ACD1067126E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70A0AA862D4896A90067377D /* PBXTargetDependency */,
+			);
+			name = "zeus-ios-sdk-gallery-tl";
+			productName = "zeus-ios-sdk-gallery-tl";
+			productReference = 70A0AA582D48967A0067377D /* zeus-ios-sdk-gallery-tl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70A0AA732D4896A90067377D /* ZeusGalleryTl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70A0AA892D4896A90067377D /* Build configuration list for PBXNativeTarget "ZeusGalleryTl" */;
+			buildPhases = (
+				18DFAC40F02F414C8387CF75 /* [CP] Check Pods Manifest.lock */,
+				70A0AA6F2D4896A90067377D /* Headers */,
+				70A0AA702D4896A90067377D /* Sources */,
+				70A0AA712D4896A90067377D /* Frameworks */,
+				70A0AA722D4896A90067377D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeusGalleryTl;
+			productName = ZeusGalleryTl;
+			productReference = 70A0AA742D4896A90067377D /* ZeusGalleryTl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70A0AA502D48967A0067377D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					70A0AA572D48967A0067377D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					70A0AA732D4896A90067377D = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+				};
+			};
+			buildConfigurationList = 70A0AA532D48967A0067377D /* Build configuration list for PBXProject "zeus-ios-sdk-gallery-tl" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70A0AA4F2D48967A0067377D;
+			productRefGroup = 70A0AA592D48967A0067377D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70A0AA572D48967A0067377D /* zeus-ios-sdk-gallery-tl */,
+				70A0AA732D4896A90067377D /* ZeusGalleryTl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70A0AA562D48967A0067377D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A0AAA72D493C5B0067377D /* env.xcconfig in Resources */,
+				70A0AA682D48967B0067377D /* LaunchScreen.storyboard in Resources */,
+				70A0AA652D48967B0067377D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A0AA722D4896A90067377D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18DFAC40F02F414C8387CF75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZeusGalleryTl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49D15C741C101ACD1067126E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zeus-ios-sdk-gallery-tl/Pods-zeus-ios-sdk-gallery-tl-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zeus-ios-sdk-gallery-tl/Pods-zeus-ios-sdk-gallery-tl-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zeus-ios-sdk-gallery-tl/Pods-zeus-ios-sdk-gallery-tl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F369A7AA846BEBCA269D3BAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zeus-ios-sdk-gallery-tl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70A0AA542D48967A0067377D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A0AAFA2D49D3BB0067377D /* MainView+Layout.swift in Sources */,
+				70A0AAF72D49D3BB0067377D /* FormView.swift in Sources */,
+				70A0AAF62D49D3BB0067377D /* FormView+Layout.swift in Sources */,
+				70A0AAF92D49D3BB0067377D /* MainView.swift in Sources */,
+				70A0AA5C2D48967A0067377D /* AppDelegate.swift in Sources */,
+				70A0AAEC2D49D3B30067377D /* MainViewController.swift in Sources */,
+				70A0AAE82D49D1DC0067377D /* InterceptorRuler.swift in Sources */,
+				70A0AA5E2D48967A0067377D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A0AA702D4896A90067377D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A0AAD22D49B1310067377D /* DetailsView+Layout.swift in Sources */,
+				70A0AA992D489CB20067377D /* GalleryPresenter.swift in Sources */,
+				70A0AAA42D489E4E0067377D /* PaginatorView.swift in Sources */,
+				70A0AA9D2D489CB20067377D /* GalleryProtocols.swift in Sources */,
+				70A0AAD42D49B1310067377D /* DetailsInteractor.swift in Sources */,
+				70A0AAC32D499B880067377D /* GalleryRouter.swift in Sources */,
+				70A0AADA2D49B9430067377D /* CardPhoto.swift in Sources */,
+				70A0AADF2D49CD840067377D /* GalleryInterptorItem.swift in Sources */,
+				70A0AA9C2D489CB20067377D /* GalleryView+Layout.swift in Sources */,
+				70A0AAD02D49B1310067377D /* DetailsRouter.swift in Sources */,
+				70A0AAA22D489E2C0067377D /* GalleryCollectionViewCell.swift in Sources */,
+				70A0AAAA2D494AA10067377D /* BaseResponse.swift in Sources */,
+				70A0AA9E2D489CB20067377D /* GalleryInteractor.swift in Sources */,
+				70A0AAD52D49B1310067377D /* DetailsView.swift in Sources */,
+				70A0AAD72D49B1720067377D /* Photo.swift in Sources */,
+				70A0AAC62D49A0930067377D /* GalleryViewController+UICollection.swift in Sources */,
+				70A0AA9B2D489CB20067377D /* GalleryViewController.swift in Sources */,
+				70A0AAE42D49CFD50067377D /* UIColor+Extension.swift in Sources */,
+				70A0AAD32D49B1310067377D /* DetailsProtocols.swift in Sources */,
+				70A0AAD12D49B1310067377D /* DetailsViewController.swift in Sources */,
+				70A0AA9F2D489CB20067377D /* GalleryView.swift in Sources */,
+				70A0AACF2D49B1310067377D /* DetailsPresenter.swift in Sources */,
+				70A0AADC2D49C5440067377D /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70A0AA862D4896A90067377D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70A0AA732D4896A90067377D /* ZeusGalleryTl */;
+			targetProxy = 70A0AA852D4896A90067377D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70A0AA662D48967B0067377D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70A0AA672D48967B0067377D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70A0AA6A2D48967B0067377D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70A0AAA62D493C5B0067377D /* env.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70A0AA6B2D48967B0067377D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70A0AAA62D493C5B0067377D /* env.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70A0AA6D2D48967B0067377D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 654640A80F6182552DEB856C /* Pods-zeus-ios-sdk-gallery-tl.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "zeus-ios-sdk-gallery-tl/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ZeusGalleryTl;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Se requiere acceso para poder guardar imagen en tu galeria";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.upaxer.zeusAPP.zeus-ios-sdk-gallery-tl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70A0AA6E2D48967B0067377D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E28FADAF56212DE69B71B4A /* Pods-zeus-ios-sdk-gallery-tl.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "zeus-ios-sdk-gallery-tl/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ZeusGalleryTl;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Se requiere acceso para poder guardar imagen en tu galeria";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.upaxer.zeusAPP.zeus-ios-sdk-gallery-tl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70A0AA8A2D4896A90067377D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D598C4220D07811F915D51 /* Pods-ZeusGalleryTl.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.upaxer.zeusAPP.ZeusGalleryTl;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70A0AA8B2D4896A90067377D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1390E1430BCBB46088ACC347 /* Pods-ZeusGalleryTl.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.upaxer.zeusAPP.ZeusGalleryTl;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70A0AA532D48967A0067377D /* Build configuration list for PBXProject "zeus-ios-sdk-gallery-tl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A0AA6A2D48967B0067377D /* Debug */,
+				70A0AA6B2D48967B0067377D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70A0AA6C2D48967B0067377D /* Build configuration list for PBXNativeTarget "zeus-ios-sdk-gallery-tl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A0AA6D2D48967B0067377D /* Debug */,
+				70A0AA6E2D48967B0067377D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70A0AA892D4896A90067377D /* Build configuration list for PBXNativeTarget "ZeusGalleryTl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A0AA8A2D4896A90067377D /* Debug */,
+				70A0AA8B2D4896A90067377D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70A0AA502D48967A0067377D /* Project object */;
+}
